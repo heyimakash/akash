@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Akash Chowdhury</title>
+  <style>
+    :root{--bg:#0e0f1b;--card:rgba(255,255,255,.06);--text:#e8ebf1;--muted:#a5a8b3;--accent:#7c5cff;--accent-2:#38bdf8}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:#0e0f1b;color:var(--text);-webkit-text-size-adjust:100%}
+    img{max-width:100%;height:auto;display:block}
+    .wrap{max-width:900px;margin:auto;padding:18px}
+    .nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    .pill{padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.06)}
+    .card{background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,.06)}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.02);color:var(--text)}
+    .btn{padding:10px 12px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#0e0f1b;border:none}
+    .row{display:flex;gap:12px;margin-top:10px;flex-wrap:wrap}
+    footer{margin-top:18px;color:var(--muted);text-align:center}
+    @media (max-width:860px){.wrap{padding:12px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav"><a class="pill" href="index.html">← Home</a><div><a class="pill" href="about.html">About</a> <a class="pill" href="experience.html">Experience</a> <a class="pill" href="projects.html">Projects</a></div></nav>
+
+    <header style="margin-bottom:12px"><h1>Contact</h1><p class="muted">Reach out via the form or the links below.</p></header>
+
+    <section class="card">
+      <form action="https://formspree.io/f/mkgvwagr" method="POST">
+        <label for="name">Name</label>
+        <input id="name" name="name" placeholder="Your name" required />
+        <label for="email" style="margin-top:8px">Email</label>
+        <input id="email" type="email" name="email" placeholder="your@email.com" required />
+        <label for="message" style="margin-top:8px">Message</label>
+        <textarea id="message" name="message" placeholder="Tell me a bit about your project…" required></textarea>
+        <button class="btn" type="submit" style="margin-top:10px">Send</button>
+      </form>
+      <p class="muted" style="margin-top:10px">Or write to: <strong>akash21chy@gmail.com</strong></p>
+    </section>
+
+    <section class="card" style="margin-top:12px">
+      <h2>Elsewhere</h2>
+      <div class="row">
+        <a class="pill" href="mailto:akash21chy@gmail.com">Email</a>
+        <a class="pill" href="#">LinkedIn</a>
+        <a class="pill" href="#">GitHub</a>
+      </div>
+    </section>
+
+    <footer>© 2025 Akash Chowdhury • Contact</footer>
+  </div>
+
+  <script>
+    // small focus animation for inputs (mobile-safe)
+    document.querySelectorAll('input, textarea').forEach(inp=>{inp.addEventListener('focus',()=>inp.style.boxShadow='0 8px 30px rgba(124,92,255,.12)');inp.addEventListener('blur',()=>inp.style.boxShadow='none')});
+  </script>
+</body>
+</html>

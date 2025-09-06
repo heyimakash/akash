@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Akash Chowdhury</title>
+  <style>
+    :root{--bg:#0f1221;--card:rgba(255,255,255,0.06);--text:#e6e7ee;--muted:#a6a7b3;--accent:#7c5cff;--accent-2:#22d3ee}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:#0f1221;color:var(--text);-webkit-text-size-adjust:100%}
+    img{max-width:100%;height:auto;display:block}
+    .wrap{max-width:1100px;margin:auto;padding:18px}
+    .nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    .pill{padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.02)}
+    header{display:flex;gap:14px;align-items:center;margin-bottom:14px}
+    header img{width:120px;height:120px;border-radius:12px;object-fit:cover}
+    h1{font-size:1.6rem;margin-bottom:6px}
+    .card{background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,.06)}
+    .chip{display:inline-block;padding:6px 10px;border-radius:999px;margin:6px;border:1px solid rgba(255,255,255,.06)}
+    .timeline{margin-top:12px}
+    .t-item{padding:10px 12px;border-left:3px solid rgba(124,92,255,.25);margin:10px 0}
+    footer{margin-top:24px;color:var(--muted);text-align:center}
+
+    @media (max-width:860px){header{flex-direction:row;gap:12px}.wrap{padding:12px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <a class="pill" href="index.html">← Home</a>
+      <div>
+        <a class="pill" href="experience.html">Experience</a>
+        <a class="pill" href="projects.html">Projects</a>
+        <a class="pill" href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <header class="card">
+      <img src="Akash_Chowdhury.jpg" alt="Portrait" />
+      <div>
+        <h1>Akash Chowdhury</h1>
+        <p class="muted">Executive Merchandiser at Image Garments Ltd. with a background in relationship management and technical support. I focus on delivery, process clarity and strong buyer communication.</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Bio</h2>
+      <p class="muted">Currently working as an Executive Merchandiser at Image Garments Ltd., where I manage order cycles from sample approval to shipment and coordinate closely with buyers, QC and logistics. Previously I worked as a Relationship Officer at City Insurance PLC and as a Help Desk Executive at OBHAI Solutions Ltd. Earlier I began my career at Genex Infosys Ltd. where I developed strong communication and analytical skills.</p>
+      <p style="margin-top:10px"><a class="pill" href="Akash_Chowdhury_CV-2.pdf" target="_blank">Download Résumé (PDF)</a></p>
+    </section>
+
+    <section class="card">
+      <h2>Skills</h2>
+      <div style="margin-top:8px">
+        <span class="chip">Merchandising & Order Management</span>
+        <span class="chip">Buyer Communication</span>
+        <span class="chip">Excel & Reporting</span>
+        <span class="chip">Process Improvement</span>
+        <span class="chip">Vendor Coordination</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Journey</h2>
+      <div class="timeline">
+        <div class="t-item"><strong>Jul 2025 — Present</strong> • Executive Merchandiser — Image Garments Ltd.</div>
+        <div class="t-item"><strong>Jun 2024 — Jun 2025</strong> • Relationship Officer — City Insurance PLC</div>
+        <div class="t-item"><strong>2019 — 2023</strong> • Help Desk Executive — OBHAI Solutions Ltd.</div>
+        <div class="t-item"><strong>2017 — 2019</strong> • CSA — Genex Infosys Ltd.</div>
+      </div>
+    </section>
+
+    <footer>© 2025 Akash Chowdhury • About</footer>
+  </div>
+
+  <script>
+    // subtle hover shimmer for cards — disabled on touch devices to avoid mobile artifact
+    if(!('ontouchstart' in window) && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      document.querySelectorAll('.card').forEach(c=>{
+        c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();const x=(e.clientX-r.left)/r.width*100;const y=(e.clientY-r.top)/r.height*100;c.style.backgroundImage=`radial-gradient(circle at ${x}% ${y}%, rgba(124,92,255,.06), transparent 20%)`});
+        c.addEventListener('mouseleave',()=>{c.style.backgroundImage='none'})
+      })
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Experience — Akash Chowdhury</title>
+  <style>
+    :root{--bg:#0b0e1a;--card:rgba(255,255,255,.06);--text:#e8ebf1;--muted:#a5a8b3;--accent:#14b8a6;--accent-2:#7c5cff}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:#0b0e1a;color:var(--text);-webkit-text-size-adjust:100%}
+    img{max-width:100%;height:auto;display:block}
+    .wrap{max-width:1100px;margin:auto;padding:18px}
+    .nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    .pill{padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.06)}
+    .card{background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,.06);margin-bottom:12px}
+    .role{display:grid;grid-template-columns:1fr 220px;gap:12px;align-items:center}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(124,92,255,.12);margin:4px}
+    footer{margin-top:18px;color:var(--muted);text-align:center}
+    @media (max-width:860px){.role{grid-template-columns:1fr;padding:12px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav"><a class="pill" href="index.html">← Home</a><div><a class="pill" href="about.html">About</a> <a class="pill" href="projects.html">Projects</a> <a class="pill" href="contact.html">Contact</a></div></nav>
+
+    <header style="margin-bottom:12px"><h1>Experience</h1><p class="muted">A concise view of my roles — current role emphasized.</p></header>
+
+    <section class="card role" style="border-left:4px solid #7c5cff;background:linear-gradient(90deg,rgba(124,92,255,.05),transparent)">
+      <div>
+        <h3>Executive Merchandiser</h3>
+        <p class="muted">July 2025 — Present • Image Garments Ltd.</p>
+        <ul style="margin-left:18px;color:var(--muted)">
+          <li>Manage buyer communication, follow-up on samples and bulk production schedules.</li>
+          <li>Coordinate with QC, factories, and logistics to ensure on-time shipment.</li>
+          <li>Track costing, purchase orders and shipment documentation.</li>
+          <li>Implement corrective actions when deviations occur and report to stakeholders.</li>
+        </ul>
+      </div>
+      <div>
+        <span class="badge">Merchandising</span>
+        <span class="badge">Order Management</span>
+        <span class="badge">Vendor Coordination</span>
+      </div>
+    </section>
+
+    <section class="card role">
+      <div>
+        <h3>Relationship Officer</h3>
+        <p class="muted">June 2024 — June 2025 • City Insurance PLC</p>
+        <ul style="margin-left:18px;color:var(--muted)">
+          <li>Built and maintained client relationships; handled policy servicing and client requests.</li>
+          <li>Coordinated with underwriting and claims teams for client support.</li>
+        </ul>
+      </div>
+      <div>
+        <span class="badge">Client Relations</span>
+        <span class="badge">Underwriting Support</span>
+      </div>
+    </section>
+
+    <section class="card role">
+      <div>
+        <h3>Help Desk Executive</h3>
+        <p class="muted">2019 — 2023 • OBHAI Solution Ltd. (MGH Group)</p>
+        <ul style="margin-left:18px;color:var(--muted)">
+          <li>Managed tickets, trained new employees, and improved troubleshooting workflows.</li>
+          <li>Recognized multiple times for consistent performance and process improvements.</li>
+        </ul>
+      </div>
+      <div>
+        <span class="badge">Support</span>
+        <span class="badge">Training</span>
+      </div>
+    </section>
+
+    <section class="card role">
+      <div>
+        <h3>CSA — Customer Service Executive</h3>
+        <p class="muted">2017 — 2019 • Genex Infosys Ltd.</p>
+        <ul style="margin-left:18px;color:var(--muted)">
+          <li>Handled inbound calls for Robi Axiata, developed customer handling and problem solving skills.</li>
+        </ul>
+      </div>
+      <div>
+        <span class="badge">Customer Service</span>
+      </div>
+    </section>
+
+    <footer>© 2025 Akash Chowdhury • Experience</footer>
+  </div>
+
+  <script>
+    // entrance animation — light and mobile-safe
+    document.querySelectorAll('.card').forEach((c,i)=>{c.style.opacity=0;c.style.transform='translateY(8px)';setTimeout(()=>{c.style.transition='all .45s cubic-bezier(.2,.9,.2,1)';c.style.opacity=1;c.style.transform='translateY(0)';},80*i)});
+  </script>
+</body>
+</html>
